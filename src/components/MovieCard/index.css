@@ -1,0 +1,71 @@
+.movie-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(22, 32, 60, 0.9), rgba(15, 25, 48, 0.96));
+  border: 1px solid rgba(112, 137, 192, 0.3);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45);
+}
+
+.movie-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 255px;
+  transition: transform 0.25s ease;
+}
+
+.movie-card:hover img {
+  transform: scale(1.03);
+}
+
+.movie-card-info {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.movie-card-info h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  color: var(--text-h);
+}
+
+.movie-card-info p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.movie-card-genre {
+  font-size: 0.8rem;
+  color: #a8b7d8;
+}
+
+.view-details {
+  align-self: start;
+  margin-top: auto;
+  background: linear-gradient(135deg, #6d85ff, #5a70dd);
+  color: #fff;
+  border: 1px solid rgba(126, 152, 255, 0.45);
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.89rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.view-details:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.07);
+}

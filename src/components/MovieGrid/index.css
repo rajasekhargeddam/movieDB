@@ -1,0 +1,17 @@
+.movie-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  margin-top: 18px;
+  padding-bottom: 10px;
+}
+
+.empty-state {
+  color: var(--text-muted);
+  margin: 28px 0;
+  text-align: center;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: rgba(16, 22, 44, 0.8);
+  border: 1px solid rgba(120, 140, 210, 0.3);
+}

@@ -1,0 +1,25 @@
+.movies-page {
+  max-width: 1200px;
+  margin: 14px auto;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.movies-page h1 {
+  font-size: clamp(1.45rem, 2.55vw, 2rem);
+  margin-bottom: 12px;
+  color: var(--accent-strong);
+}
+
+.error, .page-loading {
+  color: #f8b4b8;
+  text-align: center;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(148, 36, 31, 0.21);
+  border: 1px solid rgba(217, 70, 70, 0.35);
+}
+
